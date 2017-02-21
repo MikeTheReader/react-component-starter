@@ -1,0 +1,37 @@
+{
+  "name": "react-component-starter",
+  "version": "0.0.1",
+  "description": "A quickstart template for react components.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --colors --hide-modules",
+    "start": "webpack-dev-server",
+    "test": "test"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "quickstart"
+  ],
+  "author": "MikeTheReader",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.2",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.2.1",
+    "webpack-bundle-tracker": "^0.2.0",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
