@@ -1,11 +1,20 @@
 import React from 'react';
-import ReactTestUtils from 'react-addons-test-utils';
-import SimpleComponent from './SimpleComponent';
+import renderer from 'react-test-renderer';
+import SimpleComponent from '../src/SimpleComponent';
 
 describe('SimpleComponent', function() {
-  it('renders at all', function() {
-      expect(function() {
-        component = ReactTestUtils.renderIntoDocument(<SimpleComponent/>);
-      }).not.toThrow();
-  })
-})
+
+    beforeEach(function() {
+        this.component = renderer.create(<SimpleComponent />);
+        this.tree = this.component.toJSON();
+      });
+
+
+    it('renders at all', function() {
+        expect(this.tree).toBeDefined();
+    });
+
+    it('contains Hello World', function() {
+        expect(JSON.stringify(this.tree)).toMatch(/Hello World/)
+    })
+});
