@@ -10,7 +10,7 @@ I also mean it to be a starter project for a component only, not for a full-fled
 2. Delete the `.git` folder to detach
 3. Update `package.json` to fill in your component-specific details (name, description, etc.)
 4. Put component files in `src` directory
-5. Put test files in `test` directory
+5. Put test files in `src/__test__` directory
 6. Put example usage files in `example` directory
 
 ## Running the example
@@ -30,3 +30,10 @@ This builds the application. (Currently, there is no a production-level build --
 `npm test`
 
 This runs the tests in the application.
+
+## Formatting
+
+`npm run format`
+
+This runs prettier (https://github.com/prettier/prettier) against all the
+JavaScript files under the src directory.
