@@ -9,31 +9,31 @@ I also mean it to be a starter project for a component only, not for a full-fled
 1. Clone the repository
 2. Delete the `.git` folder to detach
 3. Update `package.json` to fill in your component-specific details (name, description, etc.)
-4. Put component files in `src` directory
-5. Put test files in `src/__test__` directory
-6. Put example usage files in `example` directory
+4. Run `yarn install` to install dependencies
+5. Put component files in `src` directory
+6. Put test files in `src/__test__` directory
+7. Put example usage files in `example` directory
 
 ## Running the example
 
-`npm start`
+`yarn start`
 
 This will run a webpack-dev-server instance running on port 3000. Navigating to http://localhost:3000/example will take you to the example application that makes use of the component.
 
 ## Building the component
 
-`npm run build`
+`yarn run build`
 
 This builds the application. (Currently, there is no a production-level build -- that is my next step.)
 
 ## Testing
 
-`npm test`
+`yarn test`
 
 This runs the tests in the application.
 
 ## Formatting
 
-`npm run format`
+`yarn run format`
 
-This runs prettier (https://github.com/prettier/prettier) against all the
-JavaScript files under the src directory.
+This runs prettier (https://github.com/prettier/prettier) against all the JavaScript files under the src directory.
