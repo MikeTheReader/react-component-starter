@@ -37,9 +37,9 @@ module.exports = {
     hot: true,
     port: 3000,
     inline: true,
+    contentBase: 'example',
     stats: {
       chunkModules: false
     },
-    publicPath: '/'
   }
 }
